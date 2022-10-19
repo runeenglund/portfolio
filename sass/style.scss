@@ -1,0 +1,41 @@
+@use '_reset.scss' as r;
+@use 'colors.scss' as c;
+
+
+nav{
+    float: right;
+    
+    .logo img{
+        float: left;
+      }
+
+    .navbar{
+        display: grid;
+        list-style: none;
+        grid-gap: 20px;
+        background-color: c.$color_2;
+        grid-template-columns: repeat(4, 1fr);
+
+        li a {
+            display: block;
+            color: var(--text);
+            padding: 8px 16px;
+            text-decoration: none;
+            text-align: center;
+            background-color: c.$color_2;
+
+            &:hover {
+                color: c.$color_2;
+                background-color: c.$color_1;
+              }
+          }
+    }
+}
+
+header{
+    
+}
+
+body{
+
+}
