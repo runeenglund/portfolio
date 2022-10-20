@@ -1,0 +1,29 @@
+@use '_colors.scss' as c;
+
+.footer {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background-color: c.$color_4;
+    color: c.$color_2;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+
+
+    .footertext {
+      display: inline-block;
+      text-align: left;
+
+      a{
+        text-decoration: none;
+      }
+      .fa-brands{
+        font-size: 30px;
+        color: c.$color_2;
+      }
+    }
+  }

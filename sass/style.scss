@@ -1,41 +1,129 @@
 @use '_reset.scss' as r;
-@use 'colors.scss' as c;
+@use '_colors.scss' as c;
+@use '_header.scss' as h;
+@use '_footer.scss' as f;
+@use '_contactForm.scss' as cf;
 
 
-nav{
-    float: right;
-    
-    .logo img{
-        float: left;
-      }
-
-    .navbar{
-        display: grid;
-        list-style: none;
-        grid-gap: 20px;
-        background-color: c.$color_2;
-        grid-template-columns: repeat(4, 1fr);
-
-        li a {
-            display: block;
-            color: var(--text);
-            padding: 8px 16px;
-            text-decoration: none;
-            text-align: center;
-            background-color: c.$color_2;
-
-            &:hover {
-                color: c.$color_2;
-                background-color: c.$color_1;
-              }
-          }
-    }
-}
-
-header{
-    
-}
 
 body{
-
+    font-family: Verdana;
+    background-color: c.$color_2;
+    margin: 0;
+    padding: 0;
 }
+
+h4{text-align: center;}
+.grid-container{
+    display: grid;
+    grid-gap: 10px;
+
+    #topBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: 2px solid c.$color_4;
+        background-color: c.$color_2;
+        color: c.$color_1;
+        cursor: pointer;
+        padding: 10px 28px;
+        border-radius: 25px;
+        font-size: 18px;
+        &:hover {
+            background-color: c.$color_4;
+            color: c.$color_2;
+          }
+      }
+      .boxes {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+
+        .box {
+            margin: auto;
+            background-color: c.$color_2;
+            text-align: left;
+            padding: 5px 10px;
+          }
+          .box1 {
+            background-color: c.$color_2;
+            text-align: left;
+            padding: 5px 10px;
+            h2{
+                margin-bottom: 5px;
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+            }
+            p{
+                line-height: 1.5;
+            }
+            .highlight{
+                color: c.$color_4;
+                font-weight: bold;
+            }
+          }
+      }
+
+      .contact{
+        text-align: center;
+
+        .text{
+            padding: 10px;
+            a{
+                text-decoration: none;
+              }
+              .fa-brands{
+                padding: 10px;
+                font-size: 40px;
+                color: c.$color_4;
+              }
+        }
+      }
+
+      .port {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        grid-column-gap: 10px;
+        grid-row-gap: 100px;
+        margin-top: 20px;
+
+        .box {
+            margin: auto;
+            background-color: c.$color_2;
+            text-align: left;
+            padding: 5px 10px;
+
+            h2{
+                margin-bottom: 15px;
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+            }
+            h4{
+                font-size: 20px;
+                color: c.$color_4;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            p{
+                margin-left: 35px;
+                margin-right: 35px;
+            }
+            .video{
+                width: 100%;
+              }
+          }
+      }
+  }
+  @media screen and (min-width: 550px) {
+    html, body{
+      height: 100%;
+    }
+  }

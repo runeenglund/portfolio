@@ -1,0 +1,110 @@
+@use '_colors.scss' as c;
+
+header{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background-color: c.$color_4;
+
+    .navbar{
+        margin-bottom: 30px;
+
+        .logo img {
+            display: block;
+            padding: 10px;
+            float: left;
+            cursor: pointer;
+            z-index: 10;
+          }
+          
+        .nav{
+            display: flex;
+            height: 8vh;
+            justify-content: center;
+            align-items: center;
+            padding-right: 10%;
+            color: c.$color_2;
+            background: none;
+            a{
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                box-sizing: border-box;
+                color:inherit;
+              }
+        
+              .navPunkter {
+                display: flex;
+                width: 40%;
+                justify-content: space-around;
+                white-space: nowrap;
+                margin-top: 45px;
+
+                    ul {
+                        list-style:none;
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+                    li{
+                        display: inline-block;
+                    }
+                    a{
+                        display: inline-block;
+                        position: relative;
+                        color: c.$color_2;
+                        text-align: center;
+                        align-items: baseline;
+                        padding: 25px 20px;
+                        margin-right: 20px;
+                        text-decoration: none;
+                        z-index: 10;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            transform: scaleX(0);
+                            height: 2px;
+                            bottom: 15px;
+                            left: 0;
+                            background-color: c.$color_2;
+                            transform-origin: bottom right;
+                            transition: transform 0.25s ease-out;
+                          }
+                          &:hover:after{
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                          }
+                      }
+                }
+        }
+      }
+    
+    .container {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-gap: 20px;
+
+        .banner{
+            text-align: center;
+            color: c.$color_2;
+            padding: 80px;
+
+            h1{
+                font-size: 55px;
+                font-weight: bold;
+            }
+            p{
+                margin-top: 30px;
+                font-size: 35px;
+            }
+          }
+      }
+}
+@media screen and (min-width: 1000px) {
+    .navPunkter li:last-child{
+      display: none;
+    }
+  }

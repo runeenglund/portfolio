@@ -1,57 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Præsentations Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <title>Om mig</title>
   </head>
   <body>
     <div class="grid-container">
       <header>
-        <div class="logo">
-          <img src="images/logo.png" alt="Logo">
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <nav>
-          <ul class="navbar">
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">Om mig</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-          </ul>
-        </nav>
+
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="nav">
+              <ul class="navPunkter">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+              </ul>
+            </nav>
+            <div class="container">
+                <div class="banner">
+                  <h1>Om mig</h1>
+                </div>
+            </div> 
+        </div>
       </header>
 
-      <div class="container">
-        <header class="banner">
-          <h1>Om mig</h1>
-        </header>
-      </div>
-
       <div class="boxes">
         <div class="box">
-          <img src="images/mig1.jpg" alt="Portræt">
+          <img src="images/mig1.jpg" alt="Portræt" width="100%">
         </div>
         <div class="box">
-          <img src="images/mig2.jpg" alt="Portræt">
+          <img src="images/mig2.jpg" alt="Portræt" width="100%">
         </div>
       </div>
 
       <div class="boxes">
         <div class="box1">
-          <h1>Rune Huan Yu Englund</h1>
-          <p>Jeg går på multimediedesigner uddannelsen på UCL og bor på fyn, jeg kan hurtigt lære nye programmer, jeg <span class="highlight">arbejder effektivt</span> når der skal arbejdes og tager den med ro når der er pauser.
-            Jeg kan godt <span class="highlight">lide at arbejde i teams</span>, da man kan spare med hinanden og komme med forskellige idéer som man kan udvikle på sammen.  </p>
+          <h2>Rune Huan Yu Englund</h2>
+          <p>Jeg går på multimediedesigner uddannelsen på UCL og bor på fyn. Mine største <span class="highlight">personlige styrker</span> er at jeg er <span class="highlight">mødestabil</span> og <span class="highlight">lærenem</span>. 
+            Hvis jeg ikke gør mit bedste for at nå et godt resultat, er jeg heller ikke selv tilfreds. Jeg kan hurtigt lære nye programmer, jeg <span class="highlight">arbejder effektivt</span> når der skal arbejdes og tager den med ro når der er pauser.
+            Jeg kan godt <span class="highlight">lide at arbejde i teams</span>, da man kan spare med hinanden og komme med forskellige idéer som man kan udvikle på sammen. Gennem mine uddannelser er jeg blevet rigtig interesseret i <span class="highlight">frontend udvikling</span>. Jeg håber derfor, at jeg i fremtiden, kan få et job indenfor dette fag. 
+          </p>
         </div>
         <div class="box1">
-          <p>Jeg har <span class="highlight">færdigheder</span> indenfor følgende software og programerings sprog:</p>
-          <img src="images/proficincies.png" alt="Professioner">
+            <h2>Jeg har <span class="highlight">færdigheder</span> indenfor følgende software og programerings sprog:</h2>
+          <img src="images/proficincies.png" alt="Professioner" width="100%">
         </div>
       </div>
 
-      <footer>
-        <p>Rune Huan Yu Englund &copy; 2021</p>
-        <p>Email: rhye38904@edu.ucl.dk</p>
+      <footer >
+        <div class="footer">
+            <div class="colum">
+                <div class="footertext">
+                    <p>Rune Huan Yu Englund &copy; 2021</p>
+                </div>
+            </div>
+            <div class="colum">
+                <div class="footertext">
+                    <p>Email: runehyenglund@gmail.com</p>
+                </div>
+            </div>
+            <div class="colum">
+                <div class="footertext">
+                    <a href="https://www.facebook.com/rune.englund/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/rune-englund/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
       </footer>
 
     </div>

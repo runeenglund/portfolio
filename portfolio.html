@@ -1,73 +1,148 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <script src="js/burgermenu.js" defer></script>
     <title>Portfolio</title>
   </head>
   <body>
     <div class="grid-container">
-      <header>
-        <div class="logo">
-          <img src="images/logo.png" alt="Logo">
-        </div>
-        <nav>
-          <ul class="navbar">
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">Om mig</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <div class="container">
-        <header class="banner">
-          <h1>Portfolio</h1>
+        <header>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                <nav class="nav">
+                  <ul class="navPunkter">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                  </ul>
+                </nav>
+                <div class="container">
+                    <div class="banner">
+                      <h1>Portfolio</h1>
+                      <p>Alt er lavet under studiet i samarbejde med klienter</p>
+                    </div>
+                </div> 
+            </div>
         </header>
-      </div>
+
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Til tops</button>
 
       <div class="port">
         <div class="box">
-          <img src="images/app.png" alt="Dating app">
-          <h4>Dating app</h4>
-          <p>App lavet og designet til dating for seniorer i samarbejde med andre- <a href="https://xd.adobe.com/view/50b8f6aa-70f0-4a3a-8af4-fad50742818c-05eb/">Link til fulde app design:</a></p>
+            <h2>Re-design af Pentias side</h2>
+            <img src="images/houseofcode.jpg" alt="Redesign af hjemmeside" width="100%">
+            <h4>House of Code blev en del af Pentia</h4>
+            <p>Vi skulle sætte de 2 firmaer sammen på én side. Hvor Pentias' side dengang havde en gennemgående navy blue farve, og House of Codes havde lidt flere farver.</p>
         </div>
         <div class="box">
-          <img src="images/portrait.png" alt="Selvportræt">
-          <h4>Selvportræt</h4>
-          <p>Selvportræt lavet i illustrator</p>
+            <h2>Re-design af Pentias side</h2>
+            <img src="images/pentia_efter.jpg" alt="Redesign af hjemmeside" width="100%">
+            <h4>Som den så ud efter</h4>
+            <p>Lavet i samarbejde med andre studerende, hvor jeg har stået for karriere siden, menuen, burgermenuen og footeren - 
+            <a href="https://xd.adobe.com/view/3ad15a5c-ff0b-49df-bfa9-712e97bb72c8-6f82/">Link til XD prototype</a> - 
+            <a href="https://renglund.com/pentia/eksamensprojekt/karriere.html">Link til kodet side</a>
+            </p>
         </div>
         <div class="box">
-          <img src="images/typografi.png" alt="Typografi">
-          <h4>Typografi</h4>
-          <p>Typografi kan se forskellig ud afhænig af fond, farver og form</p>
+            <h2>Re-design af Pulvis' side</h2>
+            <img src="images/pulvis_f.jpg" alt="Redesign af hjemmeside" width="100%">
+            <h4>Som den så ud inden</h4>
         </div>
         <div class="box">
-          <img src="images/kaffe.jpg" alt="Billede af kaffe">
-          <h4>Billede opsætning og redigering</h4>
-          <p>Det er vigtigt hvordan billedet er sat op, og hvordan det bliver redigeret bagefter</p>
+            <h2>Re-design af Pulvis' side</h2>
+            <img src="images/pulvis_efter.jpg" alt="Redesign af hjemmeside" width="100%">
+            <h4>Som den så ud efter</h4>
+            <p>Lavet i samarbejde med andre studerende - 
+            <a href="https://xd.adobe.com/view/9550948d-8dad-4562-8837-2e2f9f876273-c003/">Link til XD prototype</a> - 
+            <a href="https://xd.adobe.com/view/8eef574a-a165-49fe-818e-d74e3b7517a0-dbbc/">Link til mobil XD prototype</a> - 
+            <a href="https://renglund.com/pulvis/">Link til kodet side</a>
+            </p>
         </div>
         <div class="box">
-          <img src="images/redesign.png" alt="Redesign af hjemmeside">
-          <h4>Re-design af hjemmeside</h4>
-          <p>Lavet i samarbejde med andre - <a href="https://xd.adobe.com/view/0e6e79d0-d788-4f95-b934-2d64f548dca1-5b3d/">Link til fulde design:</a></p>
+            <h2>Re-design af Vestre skoles side</h2>
+            <img src="images/vestreskole.jpg" alt="Redesign af hjemmeside" width="100%">
+            <h4>Som den så ud inden</h4>
         </div>
         <div class="box">
-          <video class="video" controls>
-            <source src="images/moving_art.mp4" type="video/mp4">
-          </video>
+            <h2>Re-design af Vestre skoles side</h2>
+            <img src="images/vestreskole_efter.jpg" alt="Redesign af hjemmeside" width="100%">
+            <h4>Som den så ud efter</h4>
+            <p>Lavet i samarbejde med andre studerende - <a href="https://xd.adobe.com/view/0e6e79d0-d788-4f95-b934-2d64f548dca1-5b3d/">Link til fulde design</a></p>
+        </div>
+        <div class="box">
+            <h2>Udvidelse til UCLs hjemmeside</h2>
+            <img src="images/bookflip.jpg" alt="Redesign af hjemmeside" width="100%">
+            <h4>Udvidelse om brugte bøger</h4>
+            <p>Lavet i samarbejde med andre studerende - 
+            <a href="https://xd.adobe.com/view/e71ace10-9901-4923-9e32-b3c7790bbc9d-b249/">Link til XD prototype</a> - 
+            <a href="https://xd.adobe.com/view/e71ace10-9901-4923-9e32-b3c7790bbc9d-b249/">Link til mobil XD prototype</a> - 
+            <a href="https://renglund.com/bookflip/">Link til kodet side</a>
+            </p>
+        </div>
+        <div class="box">
+            <h2>Design af dating app</h2>
+            <img src="images/app.png" alt="Dating app" width="100%">
+            <h4>Dating app</h4>
+            <p>App der er lavet og designet til dating for seniorer i samarbejde med andre studerende - <a href="https://xd.adobe.com/view/50b8f6aa-70f0-4a3a-8af4-fad50742818c-05eb/">Link til fulde app design:</a></p>
+        </div>
+        <div class="box">
+            <h2>Interaktiv brugergrænseflade til Naturama</h2>
+            <img src="images/naturama.jpg" alt="Redesign af hjemmeside" width="100%">
+            <h4>Design af en interaktiv brugergrænseflade</h4>
+            <p>Lavet i samarbejde med andre studerende, hvor vi skulle lave noget interaktivt, som kan stå på Naturama. Her lavede vi noget som kunne være på en Ipad, og hvor man skulle bruge høretelefoner. - 
+            <a href="https://xd.adobe.com/view/95de0ba9-80a3-41c3-94d0-de36f38ff1e8-c08d/">Link til fulde design</a>
+            </p>
+        </div>
+        <div class="box">
+            <h2>Billede opsætning og redigering</h2>
+            <img src="images/kaffe.jpg" alt="Billede af kaffe" width="100%">
+            <h4>Et af flere billeder der blev taget og redigeret på</h4>
+            <p>Det er vigtigt hvordan billedet er sat op, og hvordan det bliver redigeret bagefter</p>
+        </div>
+        <div class="box">
+            <h2>Animation</h2>
+            <video class="video" controls>
+            <source src="images/moving_art.mp4" type="video/mp4" width="100%">
+            </video>
           <h4>En lille animation af en fugl</h4>
-          <p>Animation lavet i adobe animate</p>
+          <p>Animation lavet i adobe animate, hvor jeg vandt mest kreative animation på min årgang</p>
         </div>
       </div>
 
-      <footer>
-        <p>Rune Huan Yu Englund &copy; 2021</p>
-        <p>Email: rhye38904@edu.ucl.dk</p>
+      <footer >
+        <div class="footer">
+            <div class="colum">
+                <div class="footertext">
+                    <p>Rune Huan Yu Englund &copy; 2021</p>
+                </div>
+            </div>
+            <div class="colum">
+                <div class="footertext">
+                    <p>Email: runehyenglund@gmail.com</p>
+                </div>
+            </div>
+            <div class="colum">
+                <div class="footertext">
+                    <a href="https://www.facebook.com/rune.englund/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/rune-englund/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
       </footer>
-
       </div>
   </body>
 </html>

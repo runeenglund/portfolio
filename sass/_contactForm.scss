@@ -1,0 +1,31 @@
+@use 'colors.scss' as c;
+
+  .form {
+    border-radius: 5px;
+    padding: 20px;
+    
+    input, select, textarea {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid c.$color_3;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        resize: vertical
+      }
+    
+      input[type=submit] {
+        background-color: c.$color_4;
+        color: c.$color_2;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: c.$color_4_dark;
+          }
+      }
+  }
